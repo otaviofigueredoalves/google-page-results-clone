@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    font-size: 60.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    --main-white: #fff;
+    --main-gray: #dddddd;
+    --main-black: #000;
+    --second-gray: #727272;
+    --main-blue: #3134f1;
+    --main-green: #065c06;
+    --access-color: rgb(180, 4, 180);
+
+}
+/* HEADER - SEARCHBAR */
+header {
+    /* background-color: green; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    
+}
+
+#search-media-querie {
+    display: none;
+}
+#user-options-querie {
+    display: none;
+}
+#section-search-querie {
+    display: none;
+}
+#search-media {
+    display: none;
+}
+
+.container {
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    margin: 0px 40px;
+    width: 100%;
+}
+
+#header-search {
+    display: flex;
+    align-items: center;
+}
+
+#search, #search-icons{
+    display: flex;
+}
+
+#logo img {
+    height: 40px;
+}
+#search img {
+    height: 20px;
+}
+#search {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+    width: 800px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--main-gray);
+    
+}
+#search input {
+    display: flex;
+    flex: 1;
+    border-radius: 20px;
+    border: 0;
+    padding: 0px 10px;
+    outline: none;
+    font-size: 2rem;
+    
+}
+
+#search-icons a {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    /* background-color: green; */
+}
+#search span {
+    height: 25px;
+    width: 2px;
+    background-color: var(--main-gray);
+}
+
+/* HEADER - USER OPTIONS */
+#user-options {
+    display: flex;
+    flex: 1;
+    /* background-color: brown; */
+    align-items: center;
+    justify-content: flex-end;
+}
+#user-options img {
+    display: flex;
+}
+
+#user-profile img{
+    border-radius: 20px;
+    height: 38px;
+}
+#user-profile {
+    
+    margin-left: 20px;
+}
+#apps img{
+    height: 25px;
+}
+
+/* NAVBAR */
+#navbar{
+        /* background-color: gray;
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid var(--main-gray);
+        padding: 0px; */
+        /* background-color: red; */
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid var(--main-gray);
+}
+#navbar-content {
+    margin-left: 190px;
+}
+
+
+#navbar ul {
+    display: flex;
+    /* background-color: blue; */
+    align-items: center;
+    /* display: flex;
+    list-style-type: none;
+    font-size: 2.0rem;
+    margin-left: 180px; */
+    
+}
+#navbar ul li {
+    padding: 10px;
+    /* background-color: green; */
+    margin-right: 10px;
+    font-size: 2.0rem;
+    /* background-color: green; */
+    /* padding: 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--second-gray);
+    background-color: green; */
+}
+#navbar ul a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--second-gray)
+}
+#navbar ul a:hover {
+    color: var(--main-blue);
+    border-bottom: 1px solid var(--main-blue)
+}
+
+/* RESULTS */
+#find-search{
+    font-size: 1.8rem;
+}
+
+#resultados {
+    /* background-color: red; */
+    margin: 20px 210px;
+    font-size: 1.3rem;
+    /* background-color: red; */
+}
+
+#resultado-content {
+    margin-top: 20px;
+    max-width: 100%;
+    /* background-color: green; */
+}
+.box-resultado {
+    /* background-color: green; */
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-top: 30px;
+}
+.text-resultado a{
+    text-decoration: none;
+}
+.text-resultado p {
+    margin-top: 5px;
+    max-width: 850px;
+    display: flex;
+}
+.titulo {
+    font-weight: normal;
+    font-size: 2.7rem;
+    color: var(--main-blue);
+}
+.titulo:hover {
+    color: var(--access-color)
+}
+#link-ref {
+    font-size: 1.5rem;
+    color: var(--main-green)
+}
+.subtitle {
+    font-size: 1.7rem;
+}
+
+.img-content {
+    display: flex;
+}
+.img-content img{
+    height: 70px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+#common-results {
+    margin-left: 210px;
+}
+#common-title {
+    font-size: 2.5rem;
+}
+
+#common-results-box {
+    width: 600px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap:165px;
+    font-size: 2.0rem;
+    color: var(--main-blue);
+    font-weight: bold;
+}
+#common-results-box ul {
+    list-style-type: none;
+}
+#common-results-box li {
+    margin-top: 20px;
+}
+#common-results-box a {
+    text-decoration: none;
+    color: var(--main-blue)
+}
+#common-results-box a:hover {
+    text-decoration: underline;
+}
+
+/* GOOGLE PAGES */
+#google-nav-logo img {
+    height: 60px;
+}
+#google-pages {
+    /* background-color: red; */
+    margin-left: 210px;
+    margin-top: 30px;
+    max-width: 800px;
+}
+#google-pages ul{
+    display: flex;
+}
+#google-pages li {
+    overflow-y: hidden;
+    margin-right: 6px;
+}
+#google-pages-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#google-pages a{
+    /* background-color: green; */
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 7px;
+}
+#google-pages a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--main-gray);
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 20px 0px;
+}
+.footer-container {
+    margin-left: 210px;
+}
+.footer-box {
+    display: flex;
+    padding: 10px 0px;
+    /* background-color: yellow; */
+    color: var(--second-gray)
+}
+.box {
+    display: flex;
+    /* background-color: red; */
+    margin-left: 15px;
+}
+.footer-box a{
+    color: var(--second-gray);
+    text-decoration: none;
+    /* background-color: green; */
+    margin-right: 30px;
+}
+.footer-box a:hover {
+    color: var(--main-blue);
+    text-decoration: underline;
+}
+.footer-box ul {
+    /* background-color: pink; */
+    display: flex;
+}
+.footer-box span {
+    padding-right: 30px;
+
+    border-right: 1px solid var(--second-gray)
+}
